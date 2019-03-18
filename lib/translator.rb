@@ -18,8 +18,8 @@ def get_japanese_emoticon(path, emoticon)
   load_library(path)
   emoticons = YAML.load_file(path)
   emoticons.each do |type, meaning|
-    if emoticon == emoticons[type][0]]
-      return emoticons[type][1]]
+    if emoticon == emoticons[type[0]]
+      return emoticons[type[1]]
     else 
       return "Sorry, that emoticon was not found"
     end
