@@ -4,7 +4,7 @@ require "yaml"
 
 def load_library(path)
   # code goes here
-  new_hash = {get_meaning => {}, get_emoticon => {}}
+emoticons = YAMl.load_file("emoticons.yml")
   emoticons = YAMl.load_file(path)
   emoticons.each do | key, value|
     english = value[0]
