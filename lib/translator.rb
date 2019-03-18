@@ -7,7 +7,7 @@ def load_library(path)
   new_hash = {get_meaning => {}, get_emoticon => {}}
   emoticons = YAMl.load_file("emoticons.yml")
   emoticons.each do | key, value|
-    
+    new_hash["get_meaning"]
 end
 
 def get_japanese_emoticon
