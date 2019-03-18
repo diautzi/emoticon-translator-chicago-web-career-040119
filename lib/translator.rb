@@ -19,7 +19,7 @@ def get_japanese_emoticon(path, emoticon)
   emoticons = YAML.load_file(path)
   return_hash["get_emoticon"].each do |english, japonese|
     if emoticon == english
-      return emoticons[type[1]]
+      return japonese
     else 
       return "Sorry, that emoticon was not found"
     end
