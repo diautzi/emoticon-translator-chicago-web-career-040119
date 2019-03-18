@@ -4,7 +4,7 @@ emoticons = YAMl.load_file("emoticons.yml")
 
 def load_library(path)
   # code goes here
-  new_hash = {}
+  new_hash = {get_meaning => 
   emoticons = YAMl.load_file("emoticons.yml")
   emoticons.each do |
 end
