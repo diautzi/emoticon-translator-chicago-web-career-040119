@@ -19,6 +19,9 @@ def get_japanese_emoticon(path, emoticon)
   emoticons.each do |type, meaning|
     if emoticon == emoticons[type][0]]
       return emoticons[type][1]]
+    else 
+      return "Sorry, that emoticon was not found"
+    end
 end
 
 def get_english_meaning
