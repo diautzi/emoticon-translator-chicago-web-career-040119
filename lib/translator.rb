@@ -15,9 +15,9 @@ end
 def get_japanese_emoticon(path, emoticon)
   # code goes here
 
-  load_library(path)
+  emoticons= load_library(path)
   emoticons = YAML.load_file(path)
-  return_hash["get_emoticon"].each do |english, japonese|
+  emoticons["get_emoticon"].each do |english, japonese|
     if emoticon == english
       return japonese
     else 
